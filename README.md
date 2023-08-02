@@ -7,11 +7,11 @@ The action-perception cycle in RL generally assumes that a measurement of the st
 
 ## Hypothesis: 
 
-In order to improve the usefulness of RL in environments with high state measurement costs, the agent ough to have the ability to learn a control policy and a state measurement (overservation) policy. With these tools, the agent can learn to balance its need for timely information with the cost of information. For example, in applications with very high observation cost, the agent can learn to accept more noise and longer trajectories to the goal in order to reduce its observation costs. 
+In order to improve the usefulness of RL in environments with high state measurement costs, the agent ought to have the ability to learn a control policy and a state measurement (overservation) policy. With these tools, the agent can learn to balance its need for timely information with the cost of information. For example, in applications with very high observation cost, the agent can learn to accept more noise and longer trajectories to the goal in order to reduce its observation costs. 
 
 ## Methodology: 
 
-Within this context, we propose the Deep Dynamic Multi-Step Observationless Agent (DMSOA).
+Within this context, we propose the Deep Dynamic Multi-Step Observationless Agent (DMSOA). As shown below, the agent learns a control policy $\pi_c: s \rightarrow a_c$
 
 ![plot](figures/dmsoa_framework.png)
 
