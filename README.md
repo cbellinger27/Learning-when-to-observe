@@ -29,7 +29,11 @@ As an example, the figure below shows the mean and standard deviation of the rew
 
 ![plot](figures/cartpole_acro_learning_curves.png)
 
+In addition to saving due to the reduction on state measurements, DMSOA produces savings in terms of the number action inferences per episodes during application. In all cases, DMSOA has fewer action inferences (decision steps) per episode. 
+
 Clips of the agents playing can be seen [here](https://www.youtube.com/playlist?list=PLr6sWY5moZhFtTuCBbIjb4cZQOZkbjkOV).
+
+## Reproducibility: 
 
 To rerun the experiments:
 
