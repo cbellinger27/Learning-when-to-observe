@@ -1,0 +1,74 @@
+project: amrl_scefa2023
+program: source/agent/dqn_expander_agentPtan.py
+method: grid    
+parameters:
+  env_name:
+    value: PongNoFrameskip-v4
+  win_reward:
+    value: 0.5
+  seed: 
+    values: [13]       
+  buffer_size:
+    values: [50000]
+  vanilla:
+    value: 0
+  full_ext_reward:
+    values: [0]
+  obs_cost:
+    values: [0.001]
+  obs_flag:
+    values: [1]
+  prev_action_flag:
+    values: [0]
+  total_timesteps:
+    value: 1000000
+  train_start:
+    value: 5000
+  eps_test:
+    value: 0.005
+  eps_train:
+    value: 1
+  eps_decay: 
+    value: 969500
+  lr:
+    values: [0.0001]
+  gamma:
+    value: 0.99
+  target_update_freq:
+    value: 500
+  batch_size:
+    values: [32]
+  hidden_size:
+    value: 128
+  n_step:
+    values: [3]
+  step_per_collect:
+    value: 1
+  doubleQ:
+    values: [1]
+  noisyNet:
+    values: [0]
+  prioReplay:
+    values: [0]
+  prioAlpha:
+    value: 0.6
+  prioBeta:
+    value: 0.4
+  prioBetaFrames:
+    value: 400000
+  recurrent:
+    value: 0
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args}
+
+
+# We use WandB to run a collection of experiments all at once:
+
+# wandb sweep -e rl-team sweeps_configs/[sweepname].yaml
+# Then run the command output by the above, e.g.:
+
+# wandb agent rl-team/[proj-name]/[id]
+# Where [proj-name] and [id] are provided.

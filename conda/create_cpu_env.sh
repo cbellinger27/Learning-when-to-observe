@@ -1,1 +1,1 @@
-conda create --name amrl_scefa2023 python pytorch torchvision torchaudio pandas altair altair_saver box2d-py wandb ipykernel gym gym[box2d] gym[accept-rom-license] ale-py opencv -c pytorch -c conda-forge  -y
+conda create --name amrl_scefa2023 python pytorch torchvision torchaudio pandas altair altair_saver box2d-py wandb ipykernel gym gym[box2d] gym[accept-rom-license] ale-py opencv  -c pytorch -c conda-forge  -y

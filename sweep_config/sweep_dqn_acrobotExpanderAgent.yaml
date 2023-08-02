@@ -1,0 +1,74 @@
+project: amrl_scefa2023
+program: source/agent/dqn_expander_agentPtan.py
+method: grid    
+parameters:
+  env_name:
+    value: Acrobot-v1
+  solved_score:
+    value: 100
+  max_episode_steps:
+    value: 200
+  seed: 
+    values: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]   
+  buffer_size:
+    values: [10000]
+  vanilla:
+    value: 0
+  full_ext_reward:
+    values: [0]
+  obs_cost:
+    values: [-0.9]
+  obs_flag:
+    values: [1]
+  prev_action_flag:
+    values: [0]
+  total_timesteps:
+    value: 500000
+  train_start:
+    value: 5000
+  eps_test:
+    value: 0.01
+  eps_train:
+    value: 1
+  eps_decay: 
+    value: 369500
+  lr:
+    values: [0.001]
+  gamma:
+    value: 0.99
+  target_update_freq:
+    value: 100
+  batch_size:
+    values: [64]
+  hidden_size:
+    value: 128
+  n_step:
+    values: [3]
+  step_per_collect:
+    value: 1
+  doubleQ:
+    values: [1]
+  noisyNet:
+    values: [0]
+  prioReplay:
+    values: [1]
+  prioAlpha:
+    values: [0.6]
+  prioBeta:
+    values: [0.4]
+  prioBetaFrames:
+    value: 90000
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args}
+
+
+# We use WandB to run a collection of experiments all at once:
+
+# wandb sweep -e rl-team sweeps_configs/[sweepname].yaml
+# Then run the command output by the above, e.g.:
+
+# wandb agent rl-team/[proj-name]/[id]
+# Where [proj-name] and [id] are provided.

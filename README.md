@@ -57,6 +57,8 @@ Activate the environment:
 Install ptan package needed for the RL models:
 
     pip install ptan
+    
+    pip install pygame
 
 Running sweeps (collection of experiments)
 
