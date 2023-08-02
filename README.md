@@ -1,6 +1,15 @@
 # Learning-when-to-observe-in-RL
 This repository includes the code associated with the paper 'Learning when to observe: A frugal agent in a high-cost world' presented at ECML-PKDD workshop track: Simplification, Compression, Efficiency and Frugality for Artificial Intelligence (SCEFA). See the manuscript [here](https://arxiv.org/pdf/2307.02620.pdf).
 
+# Citation
+
+@inproceedings{bellinger2023dynamic,
+  title={Learning when to observe: A frugal reinforcement learning framework for a high-cost world},
+  author={Bellinger, Colin and Crowley, Mark and Tamblyn, Isaac},
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases -- Workshop on Simplification, Compression, Efficiency and Frugality for Artificial intelligence},
+  year={2023}
+}
+
 ## Background:
 
 The action-perception cycle in RL generally assumes that a measurement of the state of the environment is available at each time step without a cost nor a delay. In applications such as materials design, deep-sea and planetary robot exploration and medicine, however, there can be a high cost associated with measuring, or even approximating, the state of the environment. As a result, the practicality of standard RL methods is limited within settings where observations have high monetary, societal or temporal costs. This work builds on the active measure RL framwork proposed in [1] and the formalization of the active measure RL setting proposed in [2] as an action-contingent, noiselessly observable Markov decision process (AC-NOMDP).
@@ -49,11 +58,17 @@ Install ptan package needed for the RL models:
 
     pip install ptan
 
-Run the experiments:
+Running sweeps (collection of experiments)
 
-    python source/classic_control_experiments.py
+We use WandB to run a collection of experiments all at once:
 
-    python source/atari_pong_experiments.py
+    wandb sweep -e cbellinger sweep_config/[sweepname].yaml
+
+Then run the command output by the above, e.g.:
+
+    wandb agent cbellinger/[proj-name]/[id]
+
+Where [proj-name] and [id] are provided.
 
 
 ## References:
