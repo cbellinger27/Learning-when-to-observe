@@ -59,5 +59,7 @@ Run the experiments:
 ## References:
 
 [1] Bellinger C, Coles R, Crowley M, Tamblyn I. Active Measure Reinforcement Learning for Observation Cost Minimization. In Proceedings of the 34th Canadian Conference on Artificial Intelligence. CAIAC 2021.
+
 [2] Nam HA, Fleming S, Brunskill E. Reinforcement learning with state observation costs in action-contingent noiselessly observable markov decision processes. Advances in Neural Information Processing Systems. 2021
+
 [3] Bellinger C, Drozdyuk A, Crowley M, Tamblyn I. Balancing information with observation costs in deep reinforcement learning. In Proceedings of the 35th Canadian Conference on Artificial Intelligence. CAIAC 2022.
