@@ -1,9 +1,9 @@
 # Learning-when-to-observe-in-RL
-This repository includes the code associated with the paper 'Learning when to observe: A frugal agent in a high-cost world' presented at ECML-PKDD workshop track: Simplification, Compression, Efficiency and Frugality for Artificial Intelligence (SCEFA). See the manuscript [here](https://arxiv.org/pdf/2307.02620.pdf)
+This repository includes the code associated with the paper 'Learning when to observe: A frugal agent in a high-cost world' presented at ECML-PKDD workshop track: Simplification, Compression, Efficiency and Frugality for Artificial Intelligence (SCEFA). See the manuscript [here](https://arxiv.org/pdf/2307.02620.pdf).
 
 ## Background:
 
-The action-perception cycle in RL generally assumes that a measurement of the state of the environment is available at each time step without a cost nor a delay. In applications such as materials design, deep-sea and planetary robot exploration and medicine, however, there can be a high cost associated with measuring, or even approximating, the state of the environment. As a result, the practicality of standard RL methods is limited within settings where observations have high monetary, societal or temporal costs. This work builds on the active measure RL framwork proposed in [1] and formalized as an action-contingent, noiselessly observable Markov decision process (AC-NOMDP) in [2]
+The action-perception cycle in RL generally assumes that a measurement of the state of the environment is available at each time step without a cost nor a delay. In applications such as materials design, deep-sea and planetary robot exploration and medicine, however, there can be a high cost associated with measuring, or even approximating, the state of the environment. As a result, the practicality of standard RL methods is limited within settings where observations have high monetary, societal or temporal costs. This work builds on the active measure RL framwork proposed in [1] and the formalization of the active measure RL setting proposed in [2] as an action-contingent, noiselessly observable Markov decision process (AC-NOMDP).
 
 ## Hypothesis: 
 
