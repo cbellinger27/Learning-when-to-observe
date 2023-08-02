@@ -3,12 +3,12 @@ This repository includes the code associated with the paper 'Learning when to ob
 
 # Citation
 
-@inproceedings{bellinger2023dynamic,
-  title={Learning when to observe: A frugal reinforcement learning framework for a high-cost world},
-  author={Bellinger, Colin and Crowley, Mark and Tamblyn, Isaac},
-  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases -- Workshop on Simplification, Compression, Efficiency and Frugality for Artificial intelligence},
-  year={2023}
-}
+    @inproceedings{bellinger2023dynamic,
+    title={Learning when to observe: A frugal reinforcement learning framework for a high-cost world},
+    author={Bellinger, Colin and Crowley, Mark and Tamblyn, Isaac},
+    booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases -- Workshop on Simplification, Compression, Efficiency and Frugality for Artificial intelligence},
+    year={2023}
+    }
 
 ## Background:
 
@@ -70,6 +70,9 @@ Then run the command output by the above, e.g.:
 
 Where [proj-name] and [id] are provided.
 
+## Contact:
+
+Please email c.bellinger@dal.ca with questions and comments. 
 
 ## References:
 
