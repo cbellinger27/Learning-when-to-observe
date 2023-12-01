@@ -1,14 +1,14 @@
-# Learning-when-to-observe-in-RL
-This repository includes the code associated with the paper 'Learning when to observe: A frugal agent in a high-cost world' presented at ECML-PKDD workshop track: Simplification, Compression, Efficiency and Frugality for Artificial Intelligence (SCEFA). See the manuscript [here](https://arxiv.org/pdf/2307.02620.pdf).
+# Dynamic Observation Policies in Observation Cost-Sensitive Reinforcement Learning
+This repository includes the code associated with workshop papers presented at NeurIPS 2023 [WANT](https://want-ai-hpc.github.io) and ECML-PKDD 2023 [SCEFA](https://scefa.wp.imt.fr). See the manuscript [here](https://arxiv.org/pdf/2307.02620.pdf).
 
 # Citation
 
-    @inproceedings{bellinger2023dynamic,
-    title={Learning when to observe: A frugal reinforcement learning framework for a high-cost world},
-    author={Bellinger, Colin and Crowley, Mark and Tamblyn, Isaac},
-    booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases -- Workshop on Simplification, Compression, Efficiency and Frugality for Artificial intelligence},
-    year={2023}
-    }
+@article{bellinger2023dynamic,
+  title={Dynamic Observation Policies in Observation Cost-Sensitive Reinforcement Learning},
+  author={Bellinger, Colin and Crowley, Mark and Tamblyn, Isaac},
+  journal={arXiv preprint arXiv:2307.02620},
+  year={2023}
+}
 
 ## Background:
 
